@@ -60,7 +60,6 @@ def create_picture():
             return {
                 "Message": f"picture with id {picture_in['id']} already present"
             }, 302
-
     data.append(picture_in)
     return picture_in, 201
 
@@ -86,4 +85,3 @@ def delete_picture(id):
             data.remove(picture)
             return "", 204
     return {"message": "imagen no encontrada"}, 404
-
